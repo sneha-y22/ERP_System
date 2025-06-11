@@ -1,7 +1,7 @@
 // src/pages/Admin/UserManagement.js
 import React, { useState } from "react";
-import AdminLayout from "../../components/Admin/AdminLayout";
-import "../../styles/UserManagement.css";
+import AdminLayout from "../../components/Admincomponents/AdminLayout";
+import "../../styles/Admin/UserManagement.css";
 
 const UserManagement = () => {
   const [users, setUsers] = useState([

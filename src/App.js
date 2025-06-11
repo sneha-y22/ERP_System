@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import AdminDashboard from "./pages/Admin/AdminDashboard";
-import TeacherDashboard from "./pages/dashboards/TeacherDashboard";
-import StudentDashboard from "./pages/dashboards/StudentDashboard";
-import UserManagement from "./pages/Admin/UserManagement";
+import AdminDashboard from "./pages/Adminpages/AdminDashboard";
+import TeacherDashboard from "./pages/Teacherpages/TeacherDashboard";
+import StudentDashboard from "./pages/Studentpages/StudentDashboard";
+import UserManagement from "./pages/Adminpages/UserManagement";
 
 function App() {
   return (

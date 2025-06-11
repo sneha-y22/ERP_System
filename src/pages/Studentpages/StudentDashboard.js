@@ -1,17 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AdminSidebar from "../../components/Admin/AdminSidebar.js";
-import "../../styles/AdminDashboard.css";
-const AdminDashboard = () => {
+import StudentSidebar from "../../components/Studentcomponents/StudentSidebar.js";
+import "../../styles/Student/StudentDashboard.css";
+
+
+const StudentDashboard = () => {
     const navigate = useNavigate();
   return (
     <div className = "dashboard-container">
-        <header className='admin-header'>
-            <h2>ADMIN</h2>
+        <header className='student-header'>
+            <h2>STUDENT</h2>
         </header>
         <button className = "logout-btn" onClick = {()=> navigate("/")}>LOGOUT</button>
-        <AdminSidebar/>
-        <div className = "dashboard-content">
+        <StudentSidebar/>
+        <div className = "sdashboard-content">
             <h1>Welcome, Name</h1>
             <p>Manage users, academics, and system settings.</p>
         </div>
@@ -19,4 +21,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default StudentDashboard;
