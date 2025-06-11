@@ -13,8 +13,8 @@ const TeacherDashboard = () => {
         </header>
         <button className = "logout-btn" onClick = {()=> navigate("/")}>LOGOUT</button>
         <TeacherSidebar/>
-        <div className = "dashboard-content">
-            <h1>Welcome, Admin</h1>
+        <div className = "tdashboard-content">
+            <h1>Welcome, Name</h1>
             <p>Manage users, academics, and system settings.</p>
         </div>
     </div>

@@ -13,8 +13,8 @@ const StudentDashboard = () => {
         </header>
         <button className = "logout-btn" onClick = {()=> navigate("/")}>LOGOUT</button>
         <StudentSidebar/>
-        <div className = "dashboard-content">
-            <h1>Welcome, Admin</h1>
+        <div className = "sdashboard-content">
+            <h1>Welcome, Name</h1>
             <p>Manage users, academics, and system settings.</p>
         </div>
     </div>
