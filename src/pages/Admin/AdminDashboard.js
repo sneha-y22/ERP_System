@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AdminSidebar from "../../components/AdminSidebar.js";
+import AdminSidebar from "../../components/Admin/AdminSidebar.js";
 import "../../styles/AdminDashboard.css";
 const AdminDashboard = () => {
     const navigate = useNavigate();
