@@ -18,6 +18,9 @@ function App() {
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
         <Route path="/user-management" element={<UserManagement />} />
+        <Route path="/academic-management" element={<AcademicManagement />} />
+        <Route path="/admin/attendance" element={<AttendancePage />} />
+        <Route path="/admin/performance" element={<PerformancePage />} />
       </Routes>
     </Router>
   );

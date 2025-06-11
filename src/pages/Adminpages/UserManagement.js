@@ -1,10 +1,6 @@
 // src/pages/Admin/UserManagement.js
 import React, { useState } from "react";
-<<<<<<<< HEAD:src/pages/AdminPages/UserManagement.js
-import AdminLayout from "../../components/Admin/AdminLayout";
-========
-import AdminLayout from "../../components/Admincomponents/AdminLayout";
->>>>>>>> 98ca6a4670e48faeadb3d1cf5a0a5b5e5cd27586:src/pages/Adminpages/UserManagement.js
+import AdminLayout from "../../components/Admin/AdminSidebar";
 import "../../styles/Admin/UserManagement.css";
 
 const UserManagement = () => {
