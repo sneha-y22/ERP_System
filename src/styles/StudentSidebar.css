@@ -1,0 +1,76 @@
+.student-sidebar {
+  position: fixed;
+  left: -240px; 
+  width: 250px;
+  height: 100vh;
+  background: coral;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.student-sidebar.open {
+  left: 0; /* Slides in */
+}
+
+.student-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.student-sidebar::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 140px;
+  left: 10px;
+  background: transparent;
+  font-size: 48px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.student-sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.student-sidebar ul li {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.student-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.student-sidebar ul li:hover {
+  background: red;
+}
+
+.student-sidebar.open {
+  left: 0; /* Sidebar slides in */
+}
+
+.student-sidebar ul {
+  list-style: none;
+  padding: 20px;
+  font-size: 18px; /* Adjust font size */
+  margin-top: 160px; /* Moves the list 160px down */
+}
+
+.student-sidebar ul li {
+  padding: 15px;
+  font-size: 25px; /* Increase individual item font size */
+}
+
+.student-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}

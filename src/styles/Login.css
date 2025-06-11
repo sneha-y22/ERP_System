@@ -1,0 +1,92 @@
+.login-page {
+  background-color: #ffffff; /* White background */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  background-color: black; 
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+.header h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.login-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 500px;
+  padding: 50px;
+  background: #ffffff;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers elements */
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  background: #f8f8f8;
+}
+
+.input-group select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(180deg, #000000 0%, #222222 100%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.login-button:active {
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px); /* Creates a pressed effect */
+}
+
+.login-button:hover {
+  background: linear-gradient(180deg, #222222 0%, #444444 100%);
+}

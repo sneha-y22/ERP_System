@@ -1,0 +1,66 @@
+.admin-sidebar {
+  position: fixed;
+  left: -240px; 
+  width: 250px;
+  height: 100vh;
+  background: #007bff;
+  color: white;
+  transition: left 0.3s ease-in-out;
+}
+
+.admin-sidebar.open {
+  left: 0; /* Slides in */
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 140px;
+  left: 10px;
+  background: transparent;
+  font-size: 48px;
+  color: black;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.admin-sidebar ul li {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.admin-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.admin-sidebar ul li:hover {
+  background: #0056b3;
+}
+
+
+.admin-sidebar.open {
+  left: 0; /* Sidebar slides in */
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 20px;
+  font-size: 18px; /* Adjust font size */
+  margin-top: 160px; /* Moves the list 160px down */
+}
+
+.admin-sidebar ul li {
+  padding: 15px;
+  font-size: 25px; /* Increase individual item font size */
+}
+
+.admin-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
