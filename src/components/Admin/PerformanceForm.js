@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/Performance.css';
+import '../../styles/Admin/Performance.css';
 
 const PerformanceForm = () => {
   const [performanceData, setPerformanceData] = useState([]);

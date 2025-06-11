@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import AdminDashboard from "./pages/Admin/AdminDashboard";
-import TeacherDashboard from "./pages/dashboards/TeacherDashboard";
-import StudentDashboard from "./pages/dashboards/StudentDashboard";
-import UserManagement from "./pages/Admin/UserManagement";
-import AcademicManagement from "./pages/Admin/AcademicManagement";
-import AttendancePage from "./pages/Admin/AttendancePage";
-import PerformancePage from "./pages/Admin/PerformancePage";
+import AdminDashboard from "./pages/AdminPages/AdminDashboard";
+import TeacherDashboard from "./pages/TeacherPages/TeacherDashboard";
+import StudentDashboard from "./pages/StudentPages/StudentDashboard";
+import UserManagement from "./pages/AdminPages/UserManagement";
+import AcademicManagement from "./pages/AdminPages/AcademicManagement";
+import AttendancePage from "./pages/AdminPages/AttendancePage";
+import PerformancePage from "./pages/AdminPages/PerformancePage";
 
 function App() {
   return (

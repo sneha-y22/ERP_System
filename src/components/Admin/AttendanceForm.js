@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/Attendance.css';
+import '../../styles/Admin/Attendance.css';
 
 const AttendanceForm = () => {
   const [attendanceData, setAttendanceData] = useState([]);

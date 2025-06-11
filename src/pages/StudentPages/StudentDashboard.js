@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import StudentSidebar from "../../components/StudentSidebar.js";
-import "../../styles/StudentDashboard.css";
+import StudentSidebar from "../../components/Student/StudentSidebar.js";
+import "../../styles/Student/StudentDashboard.css";
 
 
 const StudentDashboard = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import TeacherSidebar from "../../components/TeacherSidebar.js";
-import "../../styles/TeacherDashboard.css";
+import TeacherSidebar from "../../components/Teacher/TeacherSidebar.js";
+import "../../styles/Teacher/TeacherDashboard.css";
 
 
 const TeacherDashboard = () => {

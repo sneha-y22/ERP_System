@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../styles/AcademicManagement.css';
+import '../../styles/Admin/AcademicManagement.css';
 import AdminSidebar from '../../components/Admin/AdminSidebar';
 import { useNavigate } from 'react-router-dom';
 
@@ -54,7 +54,6 @@ const AcademicManagement = () => {
   }
 };
 
-
   return (
     <div className="dashboard-container">
       <header className="admin-header">
@@ -76,7 +75,7 @@ const AcademicManagement = () => {
             <button onClick={addSubject}>Add</button>
           </div>
 
-<div className="form-card">
+          <div className="form-card">
   <h3>Assign Subject to Teacher</h3>
   <input
     type="text"
@@ -99,7 +98,6 @@ const AcademicManagement = () => {
     Assign
   </button>
 </div>
-
         </div>
 
         <div className="right-section">
@@ -156,7 +154,6 @@ const AcademicManagement = () => {
     </tr>
   ))}
 </tbody>
-
             </table>
           </div>
         </div>
