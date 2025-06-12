@@ -43,19 +43,13 @@
 
 /* Main Layout */
 .dashboard-content {
-  margin-left: 260px; /* equal to sidebar width */
+  margin-left: 180px; /* equal to sidebar width */
+  margin-top: 120px;
   padding: 40px;
   text-align: center;
   flex-grow: 1;
 }
 
-
-/* Sidebar will take care of its own width */
-.dashboard-content {
-  flex-grow: 1;
-  padding: 40px;
-  text-align: center;
-}
 
 /* Welcome title */
 .dashboard-content h1 {

@@ -6,27 +6,14 @@
   position: fixed;
   top: 80px; /* below the fixed header */
   left: 0;
-  padding: 30px 20px;
+  padding: 30px 15px;
   overflow-y: auto;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 
-
-.admin-sidebar.open {
-  left: 0; /* Slides in */
-}
-
-.toggle-btn {
-  position: fixed;
-  top: 140px;
-  left: 10px;
-  background: transparent;
-  font-size: 48px;
-  color: black;
-  border: none;
-  cursor: pointer;
-  z-index: 999;
+.nav{
+  margin-top: 0;
 }
 
 .admin-sidebar ul {
@@ -49,15 +36,11 @@
 }
 
 
-.admin-sidebar.open {
-  left: 0; /* Sidebar slides in */
-}
-
 .admin-sidebar ul {
   list-style: none;
   padding: 20px;
   font-size: 18px; /* Adjust font size */
-  margin-top: 160px; /* Moves the list 160px down */
+  margin-top: 40px; /* Moves the list 160px down */
 }
 
 .admin-sidebar ul li {

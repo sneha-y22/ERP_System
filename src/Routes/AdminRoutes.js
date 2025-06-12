@@ -7,11 +7,9 @@ import UserManagement from "../pages/AdminPages/UserManagement";
 import AcademicManagement from "../pages/AdminPages/AcademicManagement";
 import AttendancePage from "../pages/AdminPages/AttendancePage";
 import PerformancePage from "../pages/AdminPages/PerformancePage";
-
-// Stub components for routes that don't exist yet
-const FeeManagement = () => <div>Fee & Finance - Coming Soon</div>;
-const CommunicationCenter = () => <div>Communication Center - Coming Soon</div>;
-const SystemSettings = () => <div>System Settings - Coming Soon</div>;
+import FeeFinancePage from '../pages/AdminPages/FeeFinancePage';
+import CommunicationPage from "../pages/AdminPages/CommunicationPage";
+import SystemSettings from "../pages/AdminPages/SystemSettingsPage";
 
 console.log("✅ AdminRoutes rendered");
 
@@ -23,8 +21,8 @@ const AdminRoutes = () => (
       <Route path="academic-management" element={<AcademicManagement />} />
       <Route path="attendance-tracking" element={<AttendancePage />} />
       <Route path="performance" element={<PerformancePage />} />
-      <Route path="finance-management" element={<FeeManagement />} />
-      <Route path="communication-center" element={<CommunicationCenter />} />
+      <Route path="finance-management" element={<FeeFinancePage />} />
+      <Route path="communication-center" element={<CommunicationPage />} />
       <Route path="system-settings" element={<SystemSettings />} />
     </Route>
   </Routes>
