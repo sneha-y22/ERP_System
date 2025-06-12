@@ -42,11 +42,13 @@
 }
 
 /* Main Layout */
-.dashboard-container {
-  display: flex;
-  margin-top: 80px; /* below header */
-  min-height: calc(100vh - 80px);
+.dashboard-content {
+  margin-left: 260px; /* equal to sidebar width */
+  padding: 40px;
+  text-align: center;
+  flex-grow: 1;
 }
+
 
 /* Sidebar will take care of its own width */
 .dashboard-content {

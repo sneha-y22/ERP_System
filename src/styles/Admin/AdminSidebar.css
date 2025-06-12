@@ -1,12 +1,17 @@
 .admin-sidebar {
-  position: fixed;
-  left: -240px; 
-  width: 250px;
-  height: 100vh;
-  background: #007bff;
+  width: 260px;
+  height: calc(100vh - 80px);
+  background: #007bff; /* Monochrome primary */
   color: white;
-  transition: left 0.3s ease-in-out;
+  position: fixed;
+  top: 80px; /* below the fixed header */
+  left: 0;
+  padding: 30px 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
+
 
 .admin-sidebar.open {
   left: 0; /* Slides in */

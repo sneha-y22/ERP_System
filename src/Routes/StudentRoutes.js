@@ -6,7 +6,7 @@ import StudentLayout from "../components/Student/StudentLayout";
 const StudentDashboard = lazy(() => import("../pages/StudentPages/StudentDashboard"));
 const ClassManagement = lazy(() => import("../pages/StudentPages/ClassManagement"));
 const Assignments = lazy(() => import("../pages/StudentPages/Assignments"));
-const AttendanceTracking = lazy(() => import("../pages/StudentPages/AttendanceTracking"));
+const AttendanceTracking = lazy(() => import("../pages/StudentPages/AttendanceTracker"));
 const GradeBook = lazy(() => import("../pages/StudentPages/GradeBook"));
 const ExamSchedule = lazy(() => import("../pages/StudentPages/ExamSchedule"));
 const Announcements = lazy(() => import("../pages/StudentPages/Announcements"));

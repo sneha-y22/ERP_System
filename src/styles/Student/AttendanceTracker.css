@@ -1,0 +1,52 @@
+.attendance-wrapper {
+  padding: 40px 60px;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.attendance-title {
+  text-align: center;
+  color: #ff7f50;
+  font-size: 32px;
+  margin-bottom: 2.5rem;
+}
+
+.attendance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.attendance-card {
+  background-color: white;
+  border-left: 8px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 20px 24px;
+  transition: 0.3s ease;
+}
+
+.attendance-card h3 {
+  margin-bottom: 10px;
+  color: #ff7f50;
+  font-size: 1.4rem;
+}
+
+.attendance-card p {
+  font-size: 1.05rem;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* Status-based highlight */
+.attendance-card.good {
+  border-left-color: #4CAF50;
+}
+
+.attendance-card.average {
+  border-left-color: #FFC107;
+}
+
+.attendance-card.poor {
+  border-left-color: #F44336;
+}

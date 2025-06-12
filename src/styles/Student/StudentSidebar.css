@@ -31,3 +31,9 @@
   background-color: rgba(255, 255, 255, 0.25);
   font-weight: 600;
 }
+
+.student-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
