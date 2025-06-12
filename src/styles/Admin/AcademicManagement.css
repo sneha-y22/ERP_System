@@ -1,6 +1,6 @@
 .academic-management-content {
   display: flex;
-  margin: 80px ;
+  margin: 0 80px;
   padding: 30px;
   gap: 80px;
 }
