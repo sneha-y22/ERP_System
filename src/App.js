@@ -1,27 +1,24 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import AdminDashboard from "./pages/AdminPages/AdminDashboard";
-import TeacherDashboard from "./pages/TeacherPages/TeacherDashboard";
-import StudentDashboard from "./pages/StudentPages/StudentDashboard";
-import UserManagement from "./pages/AdminPages/UserManagement";
-import AcademicManagement from "./pages/AdminPages/AcademicManagement";
-import AttendancePage from "./pages/AdminPages/AttendancePage";
-import PerformancePage from "./pages/AdminPages/PerformancePage";
+
+// Lazy-load your route components
+const AdminRoutes = lazy(() => import("./Routes/AdminRoutes"));
+const StudentRoutes = lazy(() => import("./Routes/StudentRoutes"));
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/admin-dashboard" element={<AdminDashboard />} />
-        <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
-        <Route path="/student-dashboard" element={<StudentDashboard />} />
-        <Route path="/user-management" element={<UserManagement />} />
-        <Route path="/academic-management" element={<AcademicManagement />} />
-        <Route path="/admin/attendance" element={<AttendancePage />} />
-        <Route path="/admin/performance" element={<PerformancePage />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+         
+          <Route path="/" element={<Login />} />
+          {/* Nest admin and student route trees */}
+          <Route path="/admin/*" element={<AdminRoutes />} />
+          <Route path="/student/*" element={<StudentRoutes />} />
+           <Route path="*" element={<div>404 – Page Not Found</div>} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }

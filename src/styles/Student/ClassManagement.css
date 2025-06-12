@@ -1,0 +1,60 @@
+.schedule-table-wrapper {
+  overflow-x: auto;
+  margin: 2rem auto;           /* vertical spacing + centers the wrapper */
+  padding: 0 40px;             /* space on left & right */
+  max-width: 95vw;             /* avoids touching screen edges */
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 22px;             /* increased for readability */
+  background-color: white;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 24px 20px;          /* doubled padding */
+  border: 1px solid #ddd;
+  min-width: 160px;            /* gives better spacing */
+  vertical-align: middle;
+  color: black;
+}
+
+.schedule-table th {
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 700;
+}
+
+.schedule-table td:first-child,
+.schedule-table th:first-child {
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 700;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.class-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.class-selector label {
+  margin-bottom: 0.5rem;
+}
+
+.class-selector select {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
