@@ -8,8 +8,7 @@ const ClassManagement = lazy(() => import("../pages/StudentPages/ClassManagement
 const Assignments = lazy(() => import("../pages/StudentPages/Assignments"));
 const AttendanceTracking = lazy(() => import("../pages/StudentPages/AttendanceTracker"));
 const GradeBook = lazy(() => import("../pages/StudentPages/GradeBook"));
-const ExamSchedule = lazy(() => import("../pages/StudentPages/ExamSchedule"));
-const Announcements = lazy(() => import("../pages/StudentPages/Announcements"));
+const SemSchedule = lazy(() => import("../pages/StudentPages/SemesterSchedule"));
 const Resources = lazy(() => import("../pages/StudentPages/Resources"));
 const DiscussionBoard = lazy(() => import("../pages/StudentPages/DiscussionBoard"));
 const FeeTracker = lazy(() => import("../pages/StudentPages/FeeTracker"));
@@ -24,8 +23,7 @@ const StudentRoutes = () => (
     <Route path="assignments" element={<Assignments />} />
     <Route path="attendance-tracking" element={<AttendanceTracking />} />
     <Route path="gradebook" element={<GradeBook />} />
-    <Route path="exam-schedule" element={<ExamSchedule />} />
-    <Route path="announcements" element={<Announcements />} />
+    <Route path="sem-schedule" element={<SemSchedule />} />
     <Route path="resources" element={<Resources />} />
     <Route path="discussion-board" element={<DiscussionBoard />} />
     <Route path="fee-planner" element={<FeeTracker />} />

@@ -1,0 +1,74 @@
+.gradebook-container {
+  padding: 40px;
+  background-color: #f5f7fa;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.gradebook-container h2 {
+  color: #f88379;
+  margin-bottom: 8px;
+}
+
+.gradebook-subtext {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.gradebook-table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.gradebook-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.gradebook-table th,
+.gradebook-table td {
+  padding: 20px 14px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.gradebook-table th {
+  background-color: #ffeae6;
+  color: #f88379;
+  font-size: 1.1rem;
+  height: 60px;
+}
+
+.gradebook-table td strong {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.report-download-placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Download button */
+.download-all-btn {
+  margin-top: 30px;
+  padding: 16px 32px;
+  font-size:1rem;
+  background-color: #f88379;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-all-btn:hover {
+  background-color: #ff6655;
+}

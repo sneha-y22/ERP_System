@@ -12,8 +12,7 @@ const StudentSidebar = () => {
           <li><Link to="/student/assignments">Assignment Tracker</Link></li>
           <li><Link to="/student/attendance-tracking">Attendance Record</Link></li>
           <li><Link to="/student/gradebook">Grade Report</Link></li>
-          <li><Link to="/student/exam-schedule">Exam Schedule</Link></li>
-          <li><Link to="/student/announcements">Announcements & Notifications</Link></li>
+          <li><Link to="/student/sem-schedule">Semester Schedule</Link></li>
           <li><Link to="/student/resources">Resource Library</Link></li>
           <li><Link to="/student/discussion-board">Discussion Board</Link></li>
           <li><Link to="/student/fee-planner">Fee & Finance</Link></li>
