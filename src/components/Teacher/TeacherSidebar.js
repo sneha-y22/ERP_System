@@ -11,19 +11,17 @@ const TeacherSidebar = () => {
       <div className={`teacher-sidebar ${isOpen ? "open" : ""}`}>
         <nav>
           <ul>
-            <li><Link to="/teacher-dashboard">Home</Link></li>
-            <li><Link to="/class-management">Class Management</Link></li>
-            <li><Link to="/student-profiles">Student Profiles</Link></li>
-            <li><Link to="/assignments">Assignments Manager</Link></li>
-            <li><Link to="/attendance-tracking">Attendance Tracking</Link></li>
-            <li><Link to="/gradebook">Gradebook</Link></li>
-            <li><Link to="/timetable">Timetable & Schedules</Link></li>
-            <li><Link to="/announcements">Announcements & Notifications</Link></li>
-            <li><Link to="/resources">Resource Library</Link></li>
-            <li><Link to="/discussion-board">Chat & Discussion Board</Link></li>
-            <li><Link to="/exam-planner">Exam Planner</Link></li>
-            <li><Link to="/parent-communication">Parent Communication</Link></li>
-            <li><Link to="/performance-analytics">Performance Analytics</Link></li>
+           <li><Link to="/teacher/teacher-dashboard">Home</Link></li>
+<li><Link to="/teacher/class-schedule">Class Schedules</Link></li>
+<li><Link to="/teacher/student-profiles">Student Profiles</Link></li>
+<li><Link to="/teacher/assignments">Assignments Manager</Link></li>
+<li><Link to="/teacher/attendance-tracking">Attendance Register</Link></li>
+<li><Link to="/teacher/gradebook">Gradebook</Link></li>
+<li><Link to="/teacher/resources">Resource Library</Link></li>
+<li><Link to="/teacher/discussion-board">Chat & Discussion Board</Link></li>
+<li><Link to="/teacher/exam-schedule">Exam Schedule</Link></li>
+<li><Link to="/teacher/parent-communication">Parent Communication</Link></li>
+
           </ul>
         </nav>
       </div>

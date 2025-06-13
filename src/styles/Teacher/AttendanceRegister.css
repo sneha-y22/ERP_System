@@ -1,0 +1,22 @@
+.attendance-table {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.attendance-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.attendance-table th,
+.attendance-table td {
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.attendance-table th {
+  background-color: greenyellow;
+  color: black;
+}

@@ -1,0 +1,22 @@
+.parent-table {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.parent-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.parent-table th,
+.parent-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.parent-table th {
+  background-color: greenyellow;
+  color: black;
+}

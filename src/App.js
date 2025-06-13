@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 
 const AdminRoutes = lazy(() => import("./Routes/AdminRoutes"));
 const StudentRoutes = lazy(() => import("./Routes/StudentRoutes"));
-
+const TeacherRoutes = lazy(()=> import("./Routes/TeacherRoutes"));
 function App() {
   return (
     <Router>
@@ -13,6 +13,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/admin/*" element={<AdminRoutes />} />
           <Route path="/student/*" element={<StudentRoutes />} />
+          <Route path="/teacher/*" element={<TeacherRoutes />} />
           <Route path="*" element={<div style={{ textAlign: "center", padding: "2rem" }}>404 – Page Not Found</div>} />
         </Routes>
       </Suspense>
