@@ -8,7 +8,7 @@ const AdminSidebar = () => {
 
   return (
     <>
-      <div className={`admin-sidebar ${isOpen ? "open" : ""}`}>
+      <div className={`admin-sidebar fixed`}>
         <nav>
           <ul>
             <li><Link to="/admin/admin-dashboard">Home</Link></li>
