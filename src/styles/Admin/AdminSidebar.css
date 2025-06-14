@@ -4,7 +4,7 @@
   background: #007bff; /* Monochrome primary */
   color: white;
   position: fixed;
-  top: 80px; /* below the fixed header */
+  top: 70px; /* below the fixed header */
   left: 0;
   padding: 30px 15px;
   overflow-y: auto;
