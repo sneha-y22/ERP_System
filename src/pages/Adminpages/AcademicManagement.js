@@ -64,7 +64,7 @@ const AcademicManagement = () => {
 
       <div className="academic-management-content">
         <div className="left-section">
-          <div className="form-card">
+          <div className="form-card left">
             <h3>Add Subject</h3>
             <input
               type="text"
@@ -75,7 +75,7 @@ const AcademicManagement = () => {
             <button onClick={addSubject}>Add</button>
           </div>
 
-          <div className="form-card">
+          <div className="form-card left">
   <h3>Assign Subject to Teacher</h3>
   <input
     type="text"
@@ -101,7 +101,7 @@ const AcademicManagement = () => {
         </div>
 
         <div className="right-section">
-          <div className="form-card">
+          <div className="form-card right">
             <h3>Subjects & Assigned Teachers</h3>
             <table>
               <thead>

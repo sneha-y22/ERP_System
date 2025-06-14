@@ -1,32 +1,27 @@
-/* Header Styles */
+/* Header */
 .admin-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background: #007bff; /* Monochrome primary */
+  background: #007bff; /* Blue */
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.admin-header h2 {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
-  margin: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-/* Logout Button */
+/* Logout */
 .logout-btn {
   position: fixed;
   top: 20px;
   right: 30px;
-  background-color: #dc3545; /* Bootstrap red */
+  background-color: #dc3545;
   color: white;
   font-size: 16px;
   padding: 10px 18px;
@@ -41,27 +36,88 @@
   background-color: #c82333;
 }
 
-/* Main Layout */
+/* Layout */
+.dashboard-container {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 120px;
+  max-width: 1200hv;
+  height: 100vh;
+  background-color: #eef3f9;
+}
+
 .dashboard-content {
-  margin-left: 180px; /* equal to sidebar width */
-  margin-top: 120px;
-  padding: 40px;
-  text-align: center;
-  flex-grow: 1;
+  flex: 1;
+  padding: 40px 40px 60px 40px;
+  background-color: #eef3f9;
 }
 
-
-/* Welcome title */
+/* Welcome Panel */
 .dashboard-content h1 {
-  font-size: 26px;
-  color: #007bff;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.3rem;
 }
 
-/* Welcome paragraph */
 .dashboard-content p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555;
-  margin-top: 0;
-  line-height: 1.6;
+  margin-bottom: 2rem;
 }
+
+/* Admin Notification Cards */
+.admin-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.admin-card {
+  flex: 1 1 45%;
+  padding: 1.8rem;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 18px rgba(0, 123, 255, 0.1);
+  border-left: 6px solid #007bff;
+}
+
+.admin-card h3 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.admin-card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+
+.admin-card li {
+  margin-bottom: 0.75rem;
+  font-size: 15px;
+}
+
+/* Specific Card Themes */
+.user-activity {
+  border-left-color: #17a2b8;
+  background-color: #e6f7fc;
+}
+
+.academic-logs {
+  border-left-color: #28a745;
+  background-color: #ebf9ed;
+}
+
+.reports {
+  border-left-color: #ffc107;
+  background-color: #fff9e6;
+}
+
+.system-alerts {
+  border-left-color: #6c757d;
+  background-color: #f0f2f5;
+}
+

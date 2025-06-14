@@ -22,7 +22,7 @@
   list-style: none;
   font-size: 18px; /* Adjust font size */
   margin-top: 40px; /* Moves the list 160px down */
-  padding: 10px;
+  padding: 5px;
 }
 
 .admin-sidebar ul li {
@@ -37,7 +37,7 @@
   padding: 14px 30px;
   display: block;
   border-radius: 6px;
-  font-size: 1.25rem; /* ~20px */
+  font-size: 1.32rem; /* ~20px */
   transition: background 0.3s ease;
 }
 

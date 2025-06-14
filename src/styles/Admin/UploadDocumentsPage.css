@@ -30,8 +30,9 @@
 
 /* Upload card */
 .upload-section {
-  background-color: #ffffff;
+  background-color: #e7ecf7;
   border: 1px solid #dee2e6;
+  border-left: 5px solid #394b95;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
