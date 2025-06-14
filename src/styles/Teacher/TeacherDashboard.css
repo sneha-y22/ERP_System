@@ -1,3 +1,49 @@
+.teacher-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: greenyellow;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center; /* Center content */
+  align-items: center;
+  height: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-header h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  font-size: 16px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 1001;
+}
+
+.logout-btn:hover {
+  background-color: #c82333;
+}
+
+
+
+
 .notifications-panel {
   margin-top: 40px;
   text-align: left;
@@ -13,12 +59,18 @@
 }
 
 .notification-card {
-  border-left: 6px solid #5aa147;
   background-color: #fffce1;
-  padding: 16px 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+  border-left: 5px solid #5aa147;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notification-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .notification-card h3 {
@@ -37,3 +89,16 @@
   font-size: 13px;
   color: gray;
 }
+
+
+.tdashboard-content {
+  margin-left: 250px;  /* or 500px if sidebar is doubled again */
+  padding: 60px;       /* doubled from 30px */
+  padding-top: 140px;  /* enough space for large header */
+  font-size: 1.2rem;   /* scale up all general text inside */
+  line-height: 1.6;    /* improves text legibility */
+}
+
+
+
+

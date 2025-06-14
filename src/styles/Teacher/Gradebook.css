@@ -1,5 +1,5 @@
 .gradebook-table {
-  margin-top: 30px;
+  margin-top: 60px; /* doubled */
   overflow-x: auto;
 }
 
@@ -7,24 +7,27 @@
   width: 100%;
   border-collapse: collapse;
   background-color: white;
+  font-size: 1.2rem; /* added for clarity */
 }
 
 .gradebook-table th,
 .gradebook-table td {
-  padding: 12px;
-  border: 1px solid #ddd;
+  padding: 24px;               /* doubled */
+  border: 2px solid #ddd;      /* slightly bolder for scaled UI */
   text-align: center;
 }
 
 .gradebook-table th {
   background-color: greenyellow;
   color: black;
+  font-size: 1.3rem;           /* larger headers */
 }
 
 .gradebook-table input {
-  width: 60px;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  width: 120px;                /* doubled */
+  padding: 10px;               /* doubled */
+  font-size: 1rem;             /* scaled input text */
+  border: 2px solid #ccc;      /* slightly bolder border */
+  border-radius: 8px;          /* doubled radius */
   text-align: center;
 }

@@ -1,5 +1,5 @@
 .parent-table {
-  margin-top: 30px;
+  margin-top: 60px; /* doubled */
   overflow-x: auto;
 }
 
@@ -7,16 +7,18 @@
   width: 100%;
   border-collapse: collapse;
   background-color: white;
+  font-size: 1.2rem; /* added for clearer, larger text */
 }
 
 .parent-table th,
 .parent-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #ddd;
+  padding: 24px 30px;           /* doubled from 12px 15px */
+  border-bottom: 2px solid #ddd; /* thicker for sharper row separation */
   text-align: center;
 }
 
 .parent-table th {
   background-color: greenyellow;
   color: black;
+  font-size: 1.3rem; /* slightly larger header text */
 }
