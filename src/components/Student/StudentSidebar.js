@@ -1,26 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/Teacher/TeacherSidebar.css";
+import "../../styles/Student/StudentSidebar.css";
 
-const TeacherSidebar = () => {
+const StudentSidebar = () => {
   return (
-    <div className="teacher-sidebar">
+    <div className="student-sidebar fixed">
       <nav>
         <ul>
-          <li><Link to="/teacher/teacher-dashboard">Home</Link></li>
-          <li><Link to="/teacher/class-schedule">Class Schedules</Link></li>
-          <li><Link to="/teacher/student-profiles">Student Profiles</Link></li>
-          <li><Link to="/teacher/assignments">Assignments Manager</Link></li>
-          <li><Link to="/teacher/attendance-tracking">Attendance Register</Link></li>
-          <li><Link to="/teacher/gradebook">Gradebook</Link></li>
-          <li><Link to="/teacher/resources">Resource Library</Link></li>
-          <li><Link to="/teacher/discussion-board">Chat & Discussion Board</Link></li>
-          <li><Link to="/teacher/exam-schedule">Exam Schedule</Link></li>
-          <li><Link to="/teacher/parent-communication">Parent Communication</Link></li>
+          <li><Link to="/student/dashboard">Home</Link></li>
+          <li><Link to="/student/class-management">Class Schedule</Link></li>
+          <li><Link to="/student/assignments">Assignment Tracker</Link></li>
+          <li><Link to="/student/attendance-tracking">Attendance Record</Link></li>
+          <li><Link to="/student/gradebook">Grade Report</Link></li>
+          <li><Link to="/student/sem-schedule">Semester Schedule</Link></li>
+          <li><Link to="/student/resources">Resource Library</Link></li>
+          <li><Link to="/student/discussion-board">Discussion Board</Link></li>
+          <li><Link to="/student/fee-planner">Fee & Finance</Link></li>
+          <li><Link to="/student/teacher-communication">Teacher Feedback & Communication</Link></li>
+          <li><Link to="/student/performance-analytics">Performance Analytics</Link></li>
         </ul>
       </nav>
     </div>
   );
 };
 
-export default TeacherSidebar;
+export default StudentSidebar;
