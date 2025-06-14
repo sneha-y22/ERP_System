@@ -1,22 +1,23 @@
 .timetable-box {
   background-color: #fffce1;
-  border-left: 5px solid #5aa147;
-  padding: 20px;
-  margin-top: 30px;
-  border-radius: 8px;
-  max-width: 600px;
+  border-left: 10px solid #5aa147;        /* doubled */
+  padding: 40px;                          /* doubled */
+  margin-top: 60px;                       /* doubled */
+  border-radius: 16px;                    /* doubled */
+  max-width: 1200px;                      /* doubled */
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* slightly richer shadow */
   text-align: center;
+  font-size: 1.2rem;                      /* scaled up text */
 }
 
 .timetable-placeholder {
-  padding: 40px;
-  font-size: 16px;
+  padding: 80px;                          /* doubled */
+  font-size: 32px;                        /* doubled from 16px */
   color: #666;
-  border: 2px dashed #c1c1c1;
-  border-radius: 8px;
-  margin-top: 15px;
+  border: 4px dashed #c1c1c1;             /* doubled border thickness */
+  border-radius: 16px;                    /* doubled */
+  margin-top: 30px;                       /* doubled */
   background: white;
 }

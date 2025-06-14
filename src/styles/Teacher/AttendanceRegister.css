@@ -1,5 +1,5 @@
 .attendance-table {
-  margin-top: 30px;
+  margin-top: 60px; /* doubled */
   overflow-x: auto;
 }
 
@@ -7,16 +7,18 @@
   width: 100%;
   border-collapse: collapse;
   background-color: white;
+  font-size: 1.2rem; /* added for better text scaling */
 }
 
 .attendance-table th,
 .attendance-table td {
-  padding: 12px 20px;
-  border-bottom: 1px solid #ddd;
+  padding: 24px 40px; /* doubled padding */
+  border-bottom: 2px solid #ddd; /* slightly thicker line for balance */
   text-align: center;
 }
 
 .attendance-table th {
   background-color: greenyellow;
   color: black;
+  font-size: 1.3rem; /* header slightly larger for emphasis */
 }
