@@ -1,117 +1,120 @@
-/* Header */
-.student-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: coral;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 26px;
-  font-weight: 600;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+:root {
+  /* Cotton Candy Theme */
+  --dashboard-bg: linear-gradient(135deg, #fff9fc 10%, #fceef7 90%);
+  --card-bg: linear-gradient(135deg, #f8d7ff 10%, #c2e5ff 90%);
+  --card-hover-bg: linear-gradient(135deg, #d88bdf 10%, #779be7 90%);
+  --text-dark: #4a4a4a;
+  --text-light: white;
+  --primary-accent: #c46ebf;
+  --shadow-light: rgba(0, 0, 0, 0.12);
 }
 
-/* Logout */
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dashboard-bg);
+  padding: 40px;
+  box-sizing: border-box; /* Ensures proper spacing */
+}
+
+/* Student Header */
+.student-header {
+  width: 100%;
+  background: linear-gradient(135deg, #ffb6c1 10%, #a1c4fd 90%);
+  padding: 20px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: 0px 4px 10px var(--shadow-light);
+}
+
+/* Logout Button */
 .logout-btn {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 30px;
-  background-color: #dc3545; /* Bootstrap red */
+  background: var(--primary-accent);
   color: white;
-  font-size: 16px;
-  padding: 10px 18px;
+  font-size: 1rem;
+  padding: 10px 16px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 1001;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .logout-btn:hover {
-  background-color: #c82333;
+  background: #a055a5;
+  transform: scale(1.05);
 }
 
-/* Layout */
-.dashboard-container {
+/* Welcome Panel */
+.welcome-panel {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-panel:hover {
+  transform: scale(1.05);
+  background: var(--card-hover-bg);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Notification Group */
+.dashboard-notification-group {
   display: flex;
-  margin-top: 80px;
-  margin-left: 40px;
-  min-height: calc(100vh - 80px);
-  background-color: #f5f7fa;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual Notification Bar */
+.notification-bar {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 280px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: transform 0.3s ease, background 0.4s ease-in-out;
+}
+
+.notification-bar:hover {
+  background: var(--card-hover-bg);
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Notification Titles */
+.notification-bar h3 {
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+/* Notification Content */
+.notification-bar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notification-bar ul li {
+  font-size: 1.2rem;
+  color: #555;
+  padding: 6px 0;
 }
 
 .sdashboard-content {
-  flex: 1;
-  padding: 40px 40px 60px 40px;
-  overflow-y: auto;
-}
-
-.welcome-panel {
-  text-align: left;
-  margin-bottom: 2rem;
-}
-
-.welcome-panel h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 0.3rem;
-}
-
-.welcome-panel p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Notifications */
-.dashboard-notification-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.notification-bar {
-  padding: 2rem;
-  border-radius: 16px;
-  font-size: 1rem;
-  background-color: #fff;
-  box-shadow: 0 4px 18px rgba(248, 131, 121, 0.15);
-}
-
-.notification-bar h3 {
-  color: #f88379;
-  margin-bottom: 1rem;
-}
-
-.notification-bar ul {
-  list-style: none;
-  padding-left: 1rem;
-  margin: 0;
-}
-
-.notification-bar li {
-  margin-bottom: 0.75rem;
-}
-
-/* Themes */
-.notification-bar.assignments {
-  border-left: 6px solid #f88379;
-  background-color: #fff3f0;
-}
-
-.notification-bar.timetable {
-  border-left: 6px solid #ffae8a;
-  background-color: #fff8f5;
-}
-
-.notification-bar.discussions {
-  border-left: 6px solid #ffb6b6;
-  background-color: #fef6f6;
+  margin-left: 100px; /* Matches the sidebar width */
+  margin-top: 100px; /* A little extra spacing below header */
+  padding: 20px;
+  overflow: auto; /* Prevents hidden overflow issues */
 }

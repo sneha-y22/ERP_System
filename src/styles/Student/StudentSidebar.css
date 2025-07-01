@@ -1,39 +1,51 @@
+:root {
+  /* Cotton Candy Sidebar */
+  --sidebar-bg: linear-gradient(135deg, #fff9fc 10%, #fceef7 90%);
+  --sidebar-hover-bg: linear-gradient(135deg, #fcb3ff 10%, #a1c4fd 90%);
+  --sidebar-accent: #c46ebf; /* Deeper pastel pop */
+  --text-dark: #4a4a4a;
+}
+
+/* Student Sidebar */
 .student-sidebar.fixed {
-  width: 260px;
+  width: 350px;
   height: 100vh;
-  background-color: #ff7f50;
-  color: white;
+  background: var(--sidebar-bg);
+  color: var(--text-dark);
   position: fixed;
-  top: 60px;
+  top: 100px;
   left: 0;
   padding: 32px 20px;
   overflow-y: auto;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
-  font-size: 1.25rem; /* ~20px font */
+  box-shadow: 2px 0 14px rgba(0, 0, 0, 0.15);
+  font-size: 1.25rem;
+  border-right: 3px solid var(--sidebar-accent);
+  transition: background 0.4s ease-in-out;
 }
 
-.student-sidebar nav li {
-  margin-bottom: 18px;
-}
-
-.student-sidebar nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 14px 20px;
-  display: block;
-  border-radius: 6px;
-  font-size: 1.25rem; /* ~20px */
-  transition: background 0.3s ease;
-}
-
-.student-sidebar nav a:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-  font-weight: 600;
-}
-
+/* Remove bullets & increase text size */
 .student-sidebar nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+.student-sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 1.5rem; /* Increased text size */
+  padding: 16px 22px; /* Slightly more padding */
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.student-sidebar nav a:hover {
+  background: var(--sidebar-hover-bg);
+  font-weight: 600;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
