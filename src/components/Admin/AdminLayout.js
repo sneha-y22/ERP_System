@@ -9,7 +9,7 @@ const AdminLayout = () => {
   return (
     <div className="dashboard-container">
       <header className="admin-header">
-        <h2>ADMIN</h2>
+        <h2>EduSarthi</h2>
         <button className="logout-btn" onClick={() => navigate("/")}>LOGOUT</button>
       </header>
 
